@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content{
+  min-height: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 300px 700px;
+  /* background-color: antiquewhite; */
+}
+.left-section{
+  grid-column: span 1;
+  font-size: large;
+  /* font-weight: 500; */
+  background-color:#D7B4F3;
+  }
+.right-section{
+  display: grid;
+  grid-column: span 1 / span 2;
+  font-size: large;
+  /* font-weight: 500; */
+  grid-template-columns: 300px, 100px;
+  background-color:white;
+}
+/* .section{
+  display: block;
+} */
+.left-content{
+  padding: 1rem;
+}
+/*  Profile*/
+.profile-image{
+  display: block;
+  margin-left: auto ;
+  margin-right: auto;
+  border: 2px solid white;
+  border-radius: 30%;
+  width: 60%;
+}
+.name{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02px;
+  padding: 0.8rem;
+}
+.designation{
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+.description{
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+}
+/* contact info */
+.social-media{
+  display: flex;
+}
+
+li a{
+  text-decoration: none;
+  padding: 1.2rem;
+}
+.fa-facebook {
+  color: aquamarine;
+}
+.fa-twitter {
+  color: aquamarine;
+}
+.fa-linkedin{
+  color: aquamarine;
+}
+.fa-github{
+  color: aquamarine;
+}
+/* Skills */
+.skill-name{
+  font-size: 0.65rem;
+  text-align: left;
+  padding: 0.5rem;
+}
+.progress-bar{
+  border: 1px solid white;
+  height: 4px;
+  background-color: aquamarine;
+  border-radius: 19%;
+}
+.skills{
+   font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+/* right-section */
+.right-main-content{
+  padding: 2rem 3rem 2rem 3rem;
+  
+}
+.right-title{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
+@media screen and (max-width:673px) {
+  .main-content{
+      grid-template-columns: repeat(1,1fr);
+  }   
+}
